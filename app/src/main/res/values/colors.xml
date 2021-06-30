@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/transparent</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#81D4FA</color>
+    <color name="pink">#C3C13B68</color>
+    <color name="light_blue" />
+    <color name="dark_red">#C38C062A</color>
+    <color name="color_1">#B0B84C70</color>
+    <color name="color_2">#B10F0F</color>
+    <color name="color_3">#B0B84C70</color>
+
+    <color name="BEG" />
+</resources>
