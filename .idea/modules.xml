@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Muslim_Child_T.iml" filepath="$PROJECT_DIR$/.idea/Muslim_Child_T.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="لطفل المسلمl/app" />
+      <module fileurl="file://$PROJECT_DIR$/لطفل المسلمl.iml" filepath="$PROJECT_DIR$/لطفل المسلمl.iml" group="لطفل المسلمl" />
+    </modules>
+  </component>
+</project>
