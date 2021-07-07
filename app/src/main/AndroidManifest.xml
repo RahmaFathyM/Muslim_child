@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.l">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="الطفل المسلم"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Play_Anasheed"></activity>
+        <activity
+            android:name=".anasheed.splash_anasheed"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".anasheed.Anasheed" />
+        <activity android:name=".stories.webView_Entertainment_Stories" />
+        <activity android:name=".stories.webView_Educational_Stories" />
+        <activity android:name=".quran.web_view_quraan" />
+        <activity
+            android:name=".splash_Screen"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".stories.Educational_Stories"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".stories.Entertainment_Stories"
+            tools:ignore="DuplicateActivity" />
+        <activity android:name=".stories.Anbyaa_Stories" />
+        <activity android:name=".stories.webView_Anbyaa_Stories" />
+        <activity android:name=".quran.Quran" />
+        <activity android:name=".azkar.Azkar_A7adeeth" />
+        <activity android:name=".stories.Stories" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="sensorLandscape" />
+    </application>
+
+</manifest>
