@@ -9,8 +9,6 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.l.Adapter;
-import com.example.l.DataBase;
 import com.example.l.adapter.OnClickListener_Stories_anasheed;
 import com.example.l.R;
 
@@ -33,7 +31,7 @@ public class Quran extends AppCompatActivity {
 
         quraan_list = new ArrayList<>();
         dataBase = new DataBase(this);
-        QuranDataBase first = new QuranDataBase( " سورة عم ",R.drawable.boy);
+        QuranDataBase first = new QuranDataBase( " سورة عم ",R.drawable.anasheed);
         quraan_list = dataBase.getallsor() ;
 //        AnimationDrawable animationDrawable = (AnimationDrawable) linearLayout.getBackground();
 //        animationDrawable.setEnterFadeDuration(2000);

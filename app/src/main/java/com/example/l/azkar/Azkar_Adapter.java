@@ -14,10 +14,10 @@ import com.example.l.adapter.OnClickListener_Stories_anasheed;
 import java.util.ArrayList;
 
 public class Azkar_Adapter extends RecyclerView.Adapter<Azkar_Adapter.Azkar_VH> {
-    ArrayList<Azkar_card> arrayList;
+    ArrayList<Integer> arrayList;
     OnClickListener_Stories_anasheed listener_azkar ;
 
-    public Azkar_Adapter(ArrayList<Azkar_card> arrayList, OnClickListener_Stories_anasheed listener_azkar) {
+    public Azkar_Adapter(ArrayList<Integer> arrayList, OnClickListener_Stories_anasheed listener_azkar) {
         this.arrayList = arrayList;
         this.listener_azkar = listener_azkar;
     }
@@ -30,8 +30,8 @@ public class Azkar_Adapter extends RecyclerView.Adapter<Azkar_Adapter.Azkar_VH> 
 
     @Override
     public void onBindViewHolder(@NonNull Azkar_VH holder, int position) {
-Azkar_card azkar_card=arrayList.get(position);
-holder.zekr_image.setImageResource(azkar_card.getZekr_image());
+int zekr_image=arrayList.get(position);
+holder.zekr_image.setImageResource(zekr_image);
     }
 
     @Override

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Educational_Stories"
-    android:background="@drawable/gradiant">
+    tools:context=".stories.Educational_Stories"
+    android:background="@drawable/back_edu_rec">
 <androidx.recyclerview.widget.RecyclerView
     android:layout_width="match_parent"
     android:layout_height="match_parent"

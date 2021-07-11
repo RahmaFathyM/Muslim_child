@@ -2,13 +2,23 @@
 <resources>
     <color name="colorPrimary">@android:color/transparent</color>
     <color name="colorPrimaryDark">#FFFFFF</color>
-    <color name="colorAccent">#81D4FA</color>
+    <color name="colorAccent">#78C8EC</color>
     <color name="pink">#C3C13B68</color>
     <color name="light_blue" />
     <color name="dark_red">#C38C062A</color>
     <color name="color_1">#B0B84C70</color>
     <color name="color_2">#B10F0F</color>
     <color name="color_3">#B0B84C70</color>
+    <color name="BEG1">#FAE4A5</color>
+    <color name="BEG2">#ECDDB0</color>
+    <color name="BEG3">#F1E3B5</color>
+    <color name="blue1">#78C8EC</color>
+    <color name="blue2">#80D8FF</color>
+    <color name="blue3">#9DE1DB</color>
+    <color name="dark_brown">#653915</color>
+
+
+
 
     <color name="BEG" />
 </resources>

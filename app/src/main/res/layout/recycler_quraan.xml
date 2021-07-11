@@ -29,7 +29,7 @@
      android:layout_width="55dp"
      android:layout_height="55dp"
      android:id="@+id/img_quran"
-     android:src="@drawable/icon"/>
+     android:src="@drawable/back_edu_rec"/>
 
 
     </RelativeLayout>
