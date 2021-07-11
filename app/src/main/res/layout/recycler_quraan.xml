@@ -25,11 +25,12 @@
             android:textColor="#0000"
             android:textSize="20sp"
             android:textStyle="italic" />
- <ImageView
-     android:layout_width="55dp"
-     android:layout_height="55dp"
-     android:id="@+id/img_quran"
-     android:src="@drawable/back_edu_rec"/>
+
+        <ImageView
+            android:id="@+id/img_quran"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/back_educational_recycler" />
 
 
     </RelativeLayout>

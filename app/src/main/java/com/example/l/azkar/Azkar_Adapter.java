@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class Azkar_Adapter extends RecyclerView.Adapter<Azkar_Adapter.Azkar_VH> {
     ArrayList<Integer> arrayList;
-    OnClickListener_Stories_anasheed listener_azkar ;
+    OnClickListener_Stories_anasheed listener_azkar;
 
     public Azkar_Adapter(ArrayList<Integer> arrayList, OnClickListener_Stories_anasheed listener_azkar) {
         this.arrayList = arrayList;
@@ -25,13 +25,13 @@ public class Azkar_Adapter extends RecyclerView.Adapter<Azkar_Adapter.Azkar_VH> 
     @NonNull
     @Override
     public Azkar_VH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new Azkar_VH(LayoutInflater.from(parent.getContext()).inflate(R.layout.azkar_card,null));
+        return new Azkar_VH(LayoutInflater.from(parent.getContext()).inflate(R.layout.azkar_card, null));
     }
 
     @Override
     public void onBindViewHolder(@NonNull Azkar_VH holder, int position) {
-int zekr_image=arrayList.get(position);
-holder.zekr_image.setImageResource(zekr_image);
+        int zekr_image = arrayList.get(position);
+        holder.zekr_image.setImageResource(zekr_image);
     }
 
     @Override
@@ -39,12 +39,13 @@ holder.zekr_image.setImageResource(zekr_image);
         return arrayList.size();
     }
 
-    public class Azkar_VH extends RecyclerView.ViewHolder{
-ImageView zekr_image;
+    public class Azkar_VH extends RecyclerView.ViewHolder {
+        ImageView zekr_image;
+
         public Azkar_VH(@NonNull View itemView) {
 
             super(itemView);
-            zekr_image=itemView.findViewById(R.id.card_image);
+            zekr_image = itemView.findViewById(R.id.card_image);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

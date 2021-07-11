@@ -55,7 +55,7 @@
                     android:gravity="center_horizontal"
                     android:text="currentTime"
                     android:textColor="@color/blue1"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/tv_title"
@@ -97,9 +97,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:tint="@color/blue1"
                     android:gravity="center_horizontal"
-                    android:src="@drawable/ic_pause_circle_outline_black_24dp" />
+                    android:src="@drawable/ic_pause_circle_outline_black_24dp"
+                    android:tint="@color/blue1" />
 
                 <ImageView
                     android:id="@+id/btn_after"

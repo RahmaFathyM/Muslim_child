@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/webview_eductional_stories"
     android:orientation="vertical"
-    android:background="@drawable/back_edu"
     tools:context=".stories.WebView_Stories">
 
-<FrameLayout
-    android:id="@+id/lay_name"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintHorizontal_bias="0.952"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.06" >
-
-    <ImageView
-        android:layout_width="220dp"
-        android:layout_height="140dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/back_name" />
-
-    <TextView
-        android:id="@+id/tv_storyName"
+    <FrameLayout
+        android:id="@+id/lay_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" ثمرة الإحسان"
-        android:textColor="#BB7F2D"
-        android:layout_marginBottom="10dp"
-        android:layout_gravity="center"
-        android:textSize="20dp" />
-</FrameLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06">
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back_name_edu_story" />
+
+        <TextView
+            android:id="@+id/tv_storyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text=" ثمرة الإحسان"
+            android:textStyle="bold"
+            android:textColor="#34A4BF"
+            android:textSize="20dp" />
+    </FrameLayout>
 
 
     <WebView
@@ -44,98 +44,97 @@
         android:layout_height="450dp"
         android:layout_marginHorizontal="10dp"
         app:layout_constraintBottom_toTopOf="@+id/card"
-        app:layout_constraintTop_toBottomOf="@+id/lay_name"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/lay_name" />
 
     <androidx.cardview.widget.CardView
-    android:id="@+id/card"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:cardCornerRadius="15dp"
-    app:cardElevation="15dp"
-    android:layout_margin="5dp">
-    <LinearLayout
-        android:id="@+id/titles_seek"
+        android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
 
-        <SeekBar
-            android:id="@+id/seekBar"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/titles_seek"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:thumbTint="@color/blue1"/>
+            android:orientation="vertical">
 
-        <LinearLayout
-           android:layout_marginVertical="5dp"
-            android:layout_marginHorizontal="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="25dp">
-
-            <TextView
-                android:id="@+id/tv_current_time"
-                android:layout_width="0dp"
-                android:gravity="start"
-
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="currentTime"
-                android:textStyle="italic"
-                android:textSize="15dp"
-                android:textColor="@color/blue1"/>
+                android:layout_marginTop="7dp"
+                android:thumbTint="@color/blue1" />
 
-            <TextView
-                android:id="@+id/tv_total_time"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-               android:layout_weight="1"
-                android:gravity="end"
-                android:text="tootalTime"
-                android:textColor="@color/blue1"
-                android:textStyle="italic"
-                android:textSize="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp">
+
+                <TextView
+                    android:id="@+id/tv_current_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="currentTime"
+                    android:textColor="@color/blue1"
+                    android:textSize="15dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tv_total_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="tootalTime"
+                    android:textColor="@color/blue1"
+                    android:textSize="15dp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/titles_seek"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btn_before"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_replay_10_black_24dp"
+                    android:tint="@color/blue1" />
+
+                <ImageView
+                    android:id="@+id/btn_play"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_pause_black_24dp"
+                    android:tint="@color/blue1" />
+
+                <ImageView
+                    android:id="@+id/btn_after"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_forward_10_black_24dp"
+                    android:tint="@color/blue1" />
+            </LinearLayout>
+
         </LinearLayout>
-        <LinearLayout
-            android:layout_below="@+id/titles_seek"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginBottom="3dp"
-            android:orientation="horizontal"
-            >
+    </androidx.cardview.widget.CardView>
 
-            <ImageView
-                android:id="@+id/btn_before"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:src="@drawable/ic_replay_10_black_24dp"
-                android:tint="@color/blue1" />
-
-            <ImageView
-                android:id="@+id/btn_play"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:src="@drawable/ic_pause_black_24dp"
-                android:tint="@color/blue1" />
-
-            <ImageView
-                android:id="@+id/btn_after"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:src="@drawable/ic_forward_10_black_24dp"
-                android:tint="@color/blue1"/>
-        </LinearLayout>
-
-    </LinearLayout>
-</androidx.cardview.widget.CardView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-<!--//#137074-->
+</androidx.constraintlayout.widget.ConstraintLayout><!--//#137074-->

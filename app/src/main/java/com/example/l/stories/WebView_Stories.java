@@ -1,7 +1,5 @@
 package com.example.l.stories;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -13,28 +11,38 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.l.R;
 
 public class WebView_Stories extends AppCompatActivity {
-    TextView tv_name_story,tv_current_time , tv_total_time ;
+    TextView tv_name_story, tv_current_time, tv_total_time;
     ImageView btn_after, btn_play, btn_before;
     SeekBar seekBar;
     Handler handler;
     MediaPlayer sound;
+
     @Override
-    public  void onBackPressed(){
+    public void onBackPressed() {
         super.onBackPressed();
-        if(sound.isPlaying()){
-          sound.stop(); } }
+        if (sound.isPlaying()) {
+            sound.stop();
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         int current = getIntent().getExtras().getInt("currentWeb");
-        if(current==0) {setContentView(R.layout.activity_web_view_anbyaa_stories);}
-        else  if(current==1) {setContentView(R.layout.activity_web_view__educational__stories);}
-        else  if (current==2) {setContentView(R.layout.activity_web_view__entertainment__stories);}
-        tv_current_time=findViewById(R.id.tv_current_time);
-        tv_total_time=findViewById(R.id.tv_total_time);
+        if (current == 0) {
+            setContentView(R.layout.activity_web_view_anbyaa_stories);
+        } else if (current == 1) {
+            setContentView(R.layout.activity_web_view__educational__stories);
+        } else if (current == 2) {
+            setContentView(R.layout.activity_web_view__entertainment__stories);
+        }
+        tv_current_time = findViewById(R.id.tv_current_time);
+        tv_total_time = findViewById(R.id.tv_total_time);
         tv_name_story = findViewById(R.id.tv_storyName);
         btn_after = findViewById(R.id.btn_after);
         btn_before = findViewById(R.id.btn_before);
@@ -45,7 +53,7 @@ public class WebView_Stories extends AppCompatActivity {
         final int sound_rec = getIntent().getExtras().getInt("sound");
         String page = getIntent().getExtras().getString("page");
         tv_name_story.setText(storyName);
-        WebView webview = (WebView) findViewById(R.id.webView_stories);
+        WebView webview = findViewById(R.id.webView_stories);
         webview.setBackgroundColor(0x00FFFFFF);   //****
         webview.loadUrl("file:///android_asset/" + page + ".html");
         webview.requestFocus();
@@ -76,8 +84,9 @@ public class WebView_Stories extends AppCompatActivity {
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                if(fromUser) sound.seekTo(progress);
-                    soundTime(); }
+                if (fromUser) sound.seekTo(progress);
+                soundTime();
+            }
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
@@ -114,7 +123,7 @@ public class WebView_Stories extends AppCompatActivity {
         btn_before.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sound.seekTo(sound.getCurrentPosition()-10000);
+                sound.seekTo(sound.getCurrentPosition() - 10000);
 
             }
         });
@@ -122,21 +131,21 @@ public class WebView_Stories extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-              sound.seekTo(sound.getCurrentPosition()+10000);
+                sound.seekTo(sound.getCurrentPosition() + 10000);
 
             }
         });
     }
 
-    public void soundTime(){
+    public void soundTime() {
         seekBar.setMax(sound.getDuration());  // totalTime
-        int tim = (seekBar.getMax()/1000);   // bnksemha for 1000 lhza ..
+        int tim = (seekBar.getMax() / 1000);   // bnksemha for 1000 lhza ..
         int m = tim / 60;
-        int s = tim % 60 ;
+        int s = tim % 60;
 
         int tim0 = (seekBar.getProgress() / 1000);  // get time from movement
-        int m0 = tim0 / 60 ;
-        int s0 = tim0 % 60 ;
+        int m0 = tim0 / 60;
+        int s0 = tim0 % 60;
 
         tv_total_time.setText(m + " : " + s);
         tv_current_time.setText(m0 + " : " + s0);
@@ -146,22 +155,15 @@ public class WebView_Stories extends AppCompatActivity {
         seekBar.setProgress(sound.getCurrentPosition());
         if (sound.isPlaying()) {
 
-         Runnable   runnable = new Runnable() {
+            Runnable runnable = new Runnable() {
                 @Override
                 public void run() {
-                   changeSeekbar();
+                    changeSeekbar();
                 }
             };
-            handler.postDelayed(runnable,1000);
-        } }
-
-
-
-
-
-
-
-
+            handler.postDelayed(runnable, 1000);
+        }
+    }
 
 
 }

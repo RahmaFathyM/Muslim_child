@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@android:color/white"
-    tools:context=".azkar.Recycler_Azkar"
-    >
+    android:orientation="vertical"
+    tools:context=".azkar.Recycler_Azkar">
 
     <ImageView
         android:layout_width="250dp"
@@ -19,7 +17,6 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rec_azkar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-       />
+        android:layout_height="match_parent" />
 
 </LinearLayout>

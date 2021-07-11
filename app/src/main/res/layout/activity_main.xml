@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/design">
+    android:background="@drawable/home_page"
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/btn_quran"
@@ -28,7 +28,7 @@
         android:layout_toRightOf="@+id/btn_quran"
         android:outlineSpotShadowColor="#000"
         android:paddingTop="35dp"
-        android:src="@drawable/qassas"
+        android:src="@drawable/qassas_brid"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.361"
@@ -42,7 +42,7 @@
         android:layout_height="170dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/btn_stories"
-        android:src="@drawable/azkaar"
+        android:src="@drawable/azkaar_bird"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.698"

@@ -1,15 +1,15 @@
 package com.example.l.azkar;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.app.Dialog;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.l.R;
 import com.example.l.adapter.OnClickListener_Stories_anasheed;
@@ -19,7 +19,8 @@ import java.util.ArrayList;
 public class Recycler_Azkar extends AppCompatActivity {
     RecyclerView recyclerView;
     MediaPlayer mediaPlayer;
-    ImageView btn_replay_zekr ;
+    ImageView btn_replay_zekr;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +31,7 @@ public class Recycler_Azkar extends AppCompatActivity {
         arrayList_zekr_image.add(R.drawable.wake_up);
         arrayList_zekr_image.add(R.drawable.sleep);
         arrayList_zekr_image.add(R.drawable.bef_eat);
-        arrayList_zekr_image.add(R.drawable.aft_eat);
+        arrayList_zekr_image.add(R.drawable.after_eat);
         arrayList_zekr_image.add(R.drawable.before_bath);
         arrayList_zekr_image.add(R.drawable.after_bath);
         arrayList_zekr_image.add(R.drawable.enter_house);
@@ -45,7 +46,7 @@ public class Recycler_Azkar extends AppCompatActivity {
             public void onClick(int position) {
                 switch (position) {
                     case 0: {
-                      mediaPlayer = MediaPlayer.create(Recycler_Azkar.this, R.raw.sabah_zekr);
+                        mediaPlayer = MediaPlayer.create(Recycler_Azkar.this, R.raw.sabah_zekr);
                         mediaPlayer.start();
                         showDialog("أذكار الصباح", "اللهم بك أصبحنا وبك أمسينا وبك نحيا وبك نموت وإليك النشور", mediaPlayer.getDuration());
                         break;
@@ -66,7 +67,7 @@ public class Recycler_Azkar extends AppCompatActivity {
                     case 3: {
                         mediaPlayer = MediaPlayer.create(Recycler_Azkar.this, R.raw.sleep_sound);
                         mediaPlayer.start();
-                        showDialog("دعاء النوم", "باسمك اللهم أموت وأحيا",mediaPlayer.getDuration());
+                        showDialog("دعاء النوم", "باسمك اللهم أموت وأحيا", mediaPlayer.getDuration());
                         break;
 
                     }
@@ -74,62 +75,62 @@ public class Recycler_Azkar extends AppCompatActivity {
                     case 4: {
                         mediaPlayer = MediaPlayer.create(Recycler_Azkar.this, R.raw.before_eat_sound);
                         mediaPlayer.start();
-                        showDialog("دعاء قبل الأكل" ,"بسم الله",mediaPlayer.getDuration());
+                        showDialog("دعاء قبل الأكل", "بسم الله", mediaPlayer.getDuration());
                         break;
                     }
                     case 5: {
                         mediaPlayer = MediaPlayer.create(Recycler_Azkar.this, R.raw.after_eat);
                         mediaPlayer.start();
 
-                        showDialog("دعاء بعد الأكل", "الحمد لله الذي اطعمني هذا و رزقنيه من غير حول مني ولا قوة",mediaPlayer.getDuration());
+                        showDialog("دعاء بعد الأكل", "الحمد لله الذي اطعمني هذا و رزقنيه من غير حول مني ولا قوة", mediaPlayer.getDuration());
                         break;
                     }
                     case 6: {
                         mediaPlayer = MediaPlayer.create(Recycler_Azkar.this, R.raw.before_bath_sound);
                         mediaPlayer.start();
-                        showDialog("دعاء الدخول إلي الخلاء", "اللهم أني اعوذ بك من الخبث و الخبائث",mediaPlayer.getDuration());
+                        showDialog("دعاء الدخول إلي الخلاء", "اللهم أني اعوذ بك من الخبث و الخبائث", mediaPlayer.getDuration());
                         break;
                     }
                     case 7: {
                         mediaPlayer = MediaPlayer.create(Recycler_Azkar.this, R.raw.after_bath_sound);
                         mediaPlayer.start();
-                        showDialog("دعاء الخروج من الخلاء", "غفرانك",mediaPlayer.getDuration());
+                        showDialog("دعاء الخروج من الخلاء", "غفرانك", mediaPlayer.getDuration());
                         break;
                     }
                     case 8: {
                         mediaPlayer = MediaPlayer.create(Recycler_Azkar.this, R.raw.before_home);
                         mediaPlayer.start();
-                        showDialog("دعاء الدخول إلى المنزل", "بسم الله ولجنا و بسم الله خرجنا و على ربنا توكلنا",mediaPlayer.getDuration());
+                        showDialog("دعاء الدخول إلى المنزل", "بسم الله ولجنا و بسم الله خرجنا و على ربنا توكلنا", mediaPlayer.getDuration());
                         break;
                     }
                     case 9: {
                         mediaPlayer = MediaPlayer.create(Recycler_Azkar.this, R.raw.after_home);
                         mediaPlayer.start();
-                        showDialog("دعاء الخروج من المنزل", "بسم الله توكلت على الله ولا حول ولا قوة إلا بالله",mediaPlayer.getDuration());
+                        showDialog("دعاء الخروج من المنزل", "بسم الله توكلت على الله ولا حول ولا قوة إلا بالله", mediaPlayer.getDuration());
                         break;
                     }
                     case 10: {
                         mediaPlayer = MediaPlayer.create(Recycler_Azkar.this, R.raw.before_wodoaa);
                         mediaPlayer.start();
-                        showDialog("الذكر قبل الوضوء", "بسم الله",mediaPlayer.getDuration());
+                        showDialog("الذكر قبل الوضوء", "بسم الله", mediaPlayer.getDuration());
                         break;
                     }
                     case 11: {
                         mediaPlayer = MediaPlayer.create(Recycler_Azkar.this, R.raw.after_wodoaa);
                         mediaPlayer.start();
-                        showDialog("الذكر بعد الوضوء", "أشهد أن لا إله إلا الله وحده لا شريك له وأشهد أن محمد عبده ورسوله اللهم اجعلني من التوابين واجعلني من المتطهرين",mediaPlayer.getDuration());
+                        showDialog("الذكر بعد الوضوء", "أشهد أن لا إله إلا الله وحده لا شريك له وأشهد أن محمد عبده ورسوله اللهم اجعلني من التوابين واجعلني من المتطهرين", mediaPlayer.getDuration());
                         break;
                     }
                     case 12: {
                         mediaPlayer = MediaPlayer.create(Recycler_Azkar.this, R.raw.before_massjed);
                         mediaPlayer.start();
-                        showDialog("دعاء الدخول إالى المسجد", "أعوذ بالله العظيم وبوجهه الكريم و سلطانه لقديم من الشيطان الرجيما",mediaPlayer.getDuration());
+                        showDialog("دعاء الدخول إالى المسجد", "أعوذ بالله العظيم وبوجهه الكريم و سلطانه لقديم من الشيطان الرجيما", mediaPlayer.getDuration());
                         break;
                     }
                     case 13: {
                         mediaPlayer = MediaPlayer.create(Recycler_Azkar.this, R.raw.after_massjed);
                         mediaPlayer.start();
-                        showDialog("دعاء الخروج من المسجد", "بسم الله و الصلاة والسلام على رسول الله اللهم إني اسالك من فضلك اللهم اعصمني من الشيطان الرجيم",mediaPlayer.getDuration());
+                        showDialog("دعاء الخروج من المسجد", "بسم الله و الصلاة والسلام على رسول الله اللهم إني اسالك من فضلك اللهم اعصمني من الشيطان الرجيم", mediaPlayer.getDuration());
                         break;
                     }
                 }
@@ -149,7 +150,7 @@ public class Recycler_Azkar extends AppCompatActivity {
         dialog.setCancelable(false);
         dialog.getWindow().setBackgroundDrawableResource(R.drawable.window_dialog);
         ImageView btn_close = dialog.findViewById(R.id.img_close);
-         btn_replay_zekr = dialog.findViewById(R.id.btn_replay_zekr);
+        btn_replay_zekr = dialog.findViewById(R.id.btn_replay_zekr);
 
         TextView tv_title_dua = dialog.findViewById(R.id.tv_dua_title);
         TextView tv_body_dua = dialog.findViewById(R.id.tv_dua_body);
@@ -158,7 +159,7 @@ public class Recycler_Azkar extends AppCompatActivity {
         btn_close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               dialog.dismiss();
+                dialog.dismiss();
                 mediaPlayer.stop();
 
             }
@@ -167,8 +168,9 @@ public class Recycler_Azkar extends AppCompatActivity {
         btn_replay_zekr.postDelayed(new Runnable() {
             @Override
             public void run() {
-                btn_replay_zekr.setVisibility(View.VISIBLE); }
-        },duration);
+                btn_replay_zekr.setVisibility(View.VISIBLE);
+            }
+        }, duration);
         btn_replay_zekr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -178,15 +180,13 @@ public class Recycler_Azkar extends AppCompatActivity {
                     public void run() {
                         btn_replay_zekr.setVisibility(View.VISIBLE);
                     }
-                },duration);
+                }, duration);
                 mediaPlayer.start();
             }
         });
         dialog.show();
 
 
-
-
-          }
+    }
 
 }

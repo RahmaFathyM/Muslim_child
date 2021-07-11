@@ -1,58 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".stories.WebView_Stories"
-    android:background="@drawable/back_web_entertainment">
+    android:background="@drawable/back_web_entertainment"
+    tools:context=".stories.WebView_Stories">
 
     <FrameLayout
         android:id="@+id/lay_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintVertical_bias="0.09">
 
-app:layout_constraintHorizontal_bias="0.9"         >
         <ImageView
-            android:layout_width="220dp"
-            android:layout_height="140dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/test_shaba" />
+            android:layout_width="215dp"
+            android:layout_height="100dp"
+            android:scaleY="-1"
+            android:src="@drawable/tv_name_entertain_stories" />
+
         <TextView
             android:id="@+id/tv_storyName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:shadowColor="@android:color/black"
             android:text="الأرنب والسلحفاة"
-            android:textColor="#F7C2D6"
-            android:textSize="20dp" />
+            android:textColor="#F4C4D6"
+            android:textColorHighlight="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
     </FrameLayout>
 
 
     <WebView
         android:id="@+id/webView_stories"
         android:layout_width="match_parent"
-        android:layout_height="510dp"
+        android:layout_height="450dp"
         android:layout_marginHorizontal="10dp"
         app:layout_constraintBottom_toTopOf="@+id/card"
-        app:layout_constraintTop_toBottomOf="@+id/lay_name"
-       />
+        app:layout_constraintTop_toBottomOf="@+id/lay_name" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="5dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="15dp"
-        android:layout_margin="5dp">
+        app:layout_constraintBottom_toBottomOf="parent">
+
         <LinearLayout
             android:id="@+id/titles_seek"
             android:layout_width="match_parent"
@@ -64,25 +67,25 @@ app:layout_constraintHorizontal_bias="0.9"         >
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7dp"
-                android:thumbTint="@color/blue1"/>
+                android:thumbTint="@color/blue1" />
 
 
             <LinearLayout
-                android:layout_marginVertical="5dp"
-                android:layout_marginHorizontal="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="25dp">
+                android:layout_height="25dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp">
 
                 <TextView
                     android:id="@+id/tv_current_time"
                     android:layout_width="0dp"
-                    android:gravity="start"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:gravity="start"
                     android:text="currentTime"
-                    android:textStyle="italic"
+                    android:textColor="@color/blue1"
                     android:textSize="15dp"
-                    android:textColor="@color/blue1"/>
+                    android:textStyle="italic" />
 
                 <TextView
                     android:id="@+id/tv_total_time"
@@ -92,16 +95,16 @@ app:layout_constraintHorizontal_bias="0.9"         >
                     android:gravity="end"
                     android:text="tootalTime"
                     android:textColor="@color/blue1"
-                    android:textStyle="italic"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp"
+                    android:textStyle="italic" />
             </LinearLayout>
+
             <LinearLayout
-                android:layout_below="@+id/titles_seek"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
+                android:layout_below="@+id/titles_seek"
                 android:layout_marginBottom="3dp"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/btn_before"
@@ -128,7 +131,7 @@ app:layout_constraintHorizontal_bias="0.9"         >
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:src="@drawable/ic_forward_10_black_24dp"
-                    android:tint="@color/blue1"/>
+                    android:tint="@color/blue1" />
             </LinearLayout>
 
         </LinearLayout>
