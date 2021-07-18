@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/webview_eductional_stories"
     android:orientation="vertical"
-    tools:context=".stories.WebView_Stories">
+    tools:context=".stories.WebView_Stories_Quraan">
 
     <FrameLayout
         android:id="@+id/lay_name"

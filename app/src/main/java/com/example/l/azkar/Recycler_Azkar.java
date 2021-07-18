@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.l.R;
-import com.example.l.adapter.OnClickListener_Stories_anasheed;
+import com.example.l.adapter.OnClickListener_Stories_anasheed_quraan;
 
 import java.util.ArrayList;
 
@@ -41,7 +41,7 @@ public class Recycler_Azkar extends AppCompatActivity {
         arrayList_zekr_image.add(R.drawable.enter_msjd);
         arrayList_zekr_image.add(R.drawable.exit_msjd);
         recyclerView = findViewById(R.id.rec_azkar);
-        Azkar_Adapter azkar_adapter = new Azkar_Adapter(arrayList_zekr_image, new OnClickListener_Stories_anasheed() {
+        Azkar_Adapter azkar_adapter = new Azkar_Adapter(arrayList_zekr_image, new OnClickListener_Stories_anasheed_quraan() {
             @Override
             public void onClick(int position) {
                 switch (position) {

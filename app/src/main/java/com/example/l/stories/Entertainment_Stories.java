@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.l.R;
-import com.example.l.adapter.OnClickListener_Stories_anasheed;
+import com.example.l.adapter.OnClickListener_Stories_anasheed_quraan;
 import com.example.l.adapter.Recycler_Adapter_String;
 
 import java.util.ArrayList;
@@ -68,12 +68,12 @@ public class Entertainment_Stories extends AppCompatActivity {
         Stories_entertainment.add("حكاية توم الإصبع");
 
 
-        Recycler_Adapter_String adapter_stories = new Recycler_Adapter_String(Stories_entertainment, "#ffffff", new OnClickListener_Stories_anasheed() {
+        Recycler_Adapter_String adapter_stories = new Recycler_Adapter_String(Stories_entertainment, "#ffffff", new OnClickListener_Stories_anasheed_quraan() {
             @Override
             public void onClick(int position) {
-                Intent intent = new Intent(Entertainment_Stories.this, WebView_Stories.class);
+                Intent intent = new Intent(Entertainment_Stories.this, WebView_Stories_Quraan.class);
                 intent.putExtra("currentWeb", 2);
-                intent.putExtra("storyName", Stories_entertainment.get(position));
+                intent.putExtra("itemName", Stories_entertainment.get(position));
                 intent.putExtra("page", MB3page.get(position));
                 intent.putExtra("sound", MB3Sounds.get(position));
                 startActivity(intent);

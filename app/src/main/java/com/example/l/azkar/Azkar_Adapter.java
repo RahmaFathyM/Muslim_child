@@ -9,15 +9,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.l.R;
-import com.example.l.adapter.OnClickListener_Stories_anasheed;
+import com.example.l.adapter.OnClickListener_Stories_anasheed_quraan;
 
 import java.util.ArrayList;
 
 public class Azkar_Adapter extends RecyclerView.Adapter<Azkar_Adapter.Azkar_VH> {
     ArrayList<Integer> arrayList;
-    OnClickListener_Stories_anasheed listener_azkar;
+    OnClickListener_Stories_anasheed_quraan listener_azkar;
 
-    public Azkar_Adapter(ArrayList<Integer> arrayList, OnClickListener_Stories_anasheed listener_azkar) {
+    public Azkar_Adapter(ArrayList<Integer> arrayList, OnClickListener_Stories_anasheed_quraan listener_azkar) {
         this.arrayList = arrayList;
         this.listener_azkar = listener_azkar;
     }

@@ -15,11 +15,11 @@ import java.util.ArrayList;
 
 public class Recycler_Adapter_String extends RecyclerView.Adapter<Recycler_Adapter_String.ViewHolderString> {
 
-    OnClickListener_Stories_anasheed listener;
+    OnClickListener_Stories_anasheed_quraan listener;
     ArrayList<String> arrayList;
     String color_story_name;
 
-    public Recycler_Adapter_String(ArrayList<String> arrayList, String color_story_name, OnClickListener_Stories_anasheed listener_stories) {
+    public Recycler_Adapter_String(ArrayList<String> arrayList, String color_story_name, OnClickListener_Stories_anasheed_quraan listener_stories) {
         this.listener = listener_stories;
         this.arrayList = arrayList;
         this.color_story_name = color_story_name;

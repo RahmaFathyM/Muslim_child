@@ -4,25 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".quran.Quran"
-
-    >
-
-    <TextView
-        android:id="@+id/txt_title_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="15dp"
-        android:padding="10dp"
-        android:text=" جزء عم "
-        android:textColor="#000"
-        android:textSize="35sp"
-        android:textStyle="italic" />
-
+    tools:context=".quran.recycler_quraan"
+    android:background="@drawable/back_recycler_quraan">
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler"
+        android:id="@+id/recycler_quraan"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        />
 
 </LinearLayout>

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/webview_anbyaa_stories"
     android:orientation="vertical"
-    tools:context=".stories.WebView_Stories">
+    tools:context=".stories.WebView_Stories_Quraan">
 
     <RelativeLayout
         android:layout_width="match_parent"

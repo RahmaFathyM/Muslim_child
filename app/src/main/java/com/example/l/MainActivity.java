@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.l.anasheed.Recycler_Anasheed;
 import com.example.l.azkar.Recycler_Azkar;
-import com.example.l.quran.Quran;
+import com.example.l.quran.recycler_quraan;
 import com.example.l.stories.Stories_home;
 
 public class MainActivity extends AppCompatActivity {
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             //Arwa
             public void onClick(View v) {
                 quraan.start();
-                Intent intent = new Intent(MainActivity.this, Quran.class);
+                Intent intent = new Intent(MainActivity.this, recycler_quraan.class);
                 startActivity(intent);
 
             }

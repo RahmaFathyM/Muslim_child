@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.l.R;
-import com.example.l.adapter.OnClickListener_Stories_anasheed;
+import com.example.l.adapter.OnClickListener_Stories_anasheed_quraan;
 import com.example.l.adapter.Recycler_Adapter_String;
 
 import java.util.ArrayList;
@@ -34,7 +34,7 @@ public class Recycler_Anasheed extends AppCompatActivity {
         arrayList.add("أهلاً رمضان");
         arrayList.add("الشهور الهجرية");
 
-        Recycler_Adapter_String recyclerAdapter_anasheed = new Recycler_Adapter_String(arrayList, "#81CAAD", new OnClickListener_Stories_anasheed() {
+        Recycler_Adapter_String recyclerAdapter_anasheed = new Recycler_Adapter_String(arrayList, "#81CAAD", new OnClickListener_Stories_anasheed_quraan() {
             @Override
             public void onClick(int position) {
                 Intent intent = new Intent(Recycler_Anasheed.this, Play_Anasheed.class);

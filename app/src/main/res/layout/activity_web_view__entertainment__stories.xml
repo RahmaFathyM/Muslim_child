@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back_web_entertainment"
-    tools:context=".stories.WebView_Stories">
+    tools:context=".stories.WebView_Stories_Quraan">
 
     <FrameLayout
         android:id="@+id/lay_name"
