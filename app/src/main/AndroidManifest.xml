@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".anasheed.Play_Anasheed"></activity>
+        <activity android:name=".anasheed.Play_Anasheed"
+            android:screenOrientation="nosensor"></activity>
         <activity android:name=".anasheed.Recycler_Anasheed" />
         <activity
             android:name=".Splash_Screen"
@@ -30,7 +31,8 @@
             android:name=".stories.Entertainment_Stories"
             tools:ignore="DuplicateActivity" />
         <activity android:name=".stories.Anbyaa_Stories" />
-        <activity android:name=".stories.WebView_Stories_Quraan" />
+        <activity android:name=".stories.WebView_Stories_Quraan"
+            android:screenOrientation="nosensor"/>
         <activity android:name=".quran.recycler_quraan" />
         <activity android:name=".azkar.Recycler_Azkar" />
         <activity android:name=".stories.Stories_home" />
