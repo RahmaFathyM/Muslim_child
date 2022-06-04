@@ -1,22 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.muslim_child">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.l">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="الطفل المسلم"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Muslim_Child">
-        <activity android:name=".Activity_Recyclar"></activity>
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme">
+        <activity android:name=".anasheed.Play_Anasheed"
+            android:screenOrientation="nosensor"></activity>
+        <activity android:name=".anasheed.Recycler_Anasheed" />
+        <activity
+            android:name=".Splash_Screen"
+            android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".stories.Educational_Stories"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".stories.Entertainment_Stories"
+            tools:ignore="DuplicateActivity" />
+        <activity android:name=".stories.Anbyaa_Stories" />
+        <activity android:name=".stories.WebView_Stories_Quraan"
+            android:screenOrientation="nosensor"/>
+        <activity android:name=".quran.recycler_quraan" />
+        <activity android:name=".azkar.Recycler_Azkar" />
+        <activity android:name=".stories.Stories_home" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="sensorLandscape" />
     </application>
 
 </manifest>

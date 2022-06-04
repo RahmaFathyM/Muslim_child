@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Play_Anasheed">
+    tools:context=".anasheed.Play_Anasheed">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,17 +18,16 @@
         app:srcCompat="@drawable/radio" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="130dp"
         android:layout_alignParentBottom="true"
         android:layout_margin="5dp"
         app:cardCornerRadius="10dp"
-        app:cardElevation="40dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.9"
-        >
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,87 +39,74 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7dp"
-                android:thumbTint="@color/colorAccent" />
+                android:thumbTint="@color/blue1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="50dp"
                 android:orientation="horizontal"
-                android:padding="3dp">
+                android:padding="5dp">
 
                 <TextView
                     android:id="@+id/tv_current_time"
                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_height="30dp"
-
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
                     android:text="currentTime"
-                    android:textColor="@color/colorAccent" />
+                    android:textColor="@color/blue1"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/tv_title"
                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_height="30dp"
-
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="120dp"
-                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
                     android:text="Title"
-                    android:textColor="@color/colorAccent"
-                    android:textStyle="" />
+                    android:textColor="@color/blue1"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/tv_total_time"
                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_height="30dp"
-
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="120dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="5dp"
+                    android:gravity="center_horizontal"
                     android:text="tootalTime"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@color/blue1"
                     android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="8dp"
+                android:layout_height="50dp"
                 android:orientation="horizontal"
-                android:paddingTop="10dp">
+                android:padding="5dp">
 
                 <ImageView
                     android:id="@+id/btn_before"
                     android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
+                    android:gravity="center_horizontal"
                     android:src="@drawable/ic_fast_rewind_black_24dp" />
 
                 <ImageView
                     android:id="@+id/btn_play"
                     android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="120dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:src="@drawable/ic_pause_anasheed_24dp" />
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/ic_pause_circle_outline_black_24dp"
+                    android:tint="@color/blue1" />
 
                 <ImageView
                     android:id="@+id/btn_after"
                     android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="120dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
+                    android:gravity="center_horizontal"
                     android:src="@drawable/ic_fast_forward_black_24dp" />
             </LinearLayout>
 

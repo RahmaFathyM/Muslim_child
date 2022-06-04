@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".splash_Screen">
+    tools:context=".Splash_Screen">
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        app:civ_border_width="1dp"
-        android:elevation="50dp"
         android:layout_margin="15dp"
+        android:elevation="50dp"
+        android:src="@drawable/icon"
         app:civ_border_color="#40000000"
         app:civ_border_overlay="true"
-        android:src="@drawable/icon"
-        />
+        app:civ_border_width="1dp" />
 
 </RelativeLayout>
