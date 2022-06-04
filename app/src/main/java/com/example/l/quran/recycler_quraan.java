@@ -64,8 +64,8 @@ public class recycler_quraan extends AppCompatActivity {
         MB3Sounds.add(R.raw.falaq);
         MB3Sounds.add(R.raw.nas);
         final ArrayList<String> MB3page =new ArrayList<>();
-        MB3page.add("nabaa");
-        MB3page.add("nazaat");
+        MB3page.add(getString(R.string.nabaa));
+        MB3page.add(getString(R.string.nazaat));
         MB3page.add("abasa");
         MB3page.add("takwer");
         MB3page.add("inftar");
