@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_Update_at_6_4_2022_8_19_AM_[Default_Changelist]" date="1654323625509" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_4_2022_8_19_AM_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 6/4/2022 8:19 AM [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/5.6.4/fileHashes/fileHashes.bin" />
+    <option name="AFTER_PATH" value=".gradle/5.6.4/fileHashes/fileHashes.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_4_2022_8_19_AM_[Default_Changelist]/fileHashes.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/5.6.4/fileHashes/fileHashes.lock" />
+    <option name="AFTER_PATH" value=".gradle/5.6.4/fileHashes/fileHashes.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_4_2022_8_19_AM_[Default_Changelist]/fileHashes.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+    <option name="AFTER_PATH" value=".gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_4_2022_8_19_AM_[Default_Changelist]/buildOutputCleanup.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/buildOutputCleanup/outputFiles.bin" />
+    <option name="AFTER_PATH" value=".gradle/buildOutputCleanup/outputFiles.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_4_2022_8_19_AM_[Default_Changelist]/outputFiles.bin" />
+  </binary>
+</changelist>
