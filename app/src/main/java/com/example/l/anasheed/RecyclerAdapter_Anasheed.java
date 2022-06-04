@@ -10,7 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.l.adapter.OnClickListener_Stories_anasheed;
-import com.example.l.R;
+import com.example.l.Recycler_Adapter_Stories;
+import com.example.muslim_child.R;
 
 import java.util.ArrayList;
 

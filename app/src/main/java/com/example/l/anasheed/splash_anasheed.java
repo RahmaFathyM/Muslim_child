@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
-import com.example.l.R;
+import com.example.l.Recycler_Adapter_Stories;
+import com.example.muslim_child.R;
 
 public class splash_anasheed extends AppCompatActivity {
 

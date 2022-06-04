@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Muslim_Child_T.iml" filepath="$PROJECT_DIR$/.idea/Muslim_Child_T.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="لطفل المسلمl/app" />
-      <module fileurl="file://$PROJECT_DIR$/لطفل المسلمl.iml" filepath="$PROJECT_DIR$/لطفل المسلمl.iml" group="لطفل المسلمl" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Muslim_Child.iml" filepath="$PROJECT_DIR$/.idea/modules/Muslim_Child.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Muslim_Child.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Muslim_Child.app.iml" />
     </modules>
   </component>
 </project>

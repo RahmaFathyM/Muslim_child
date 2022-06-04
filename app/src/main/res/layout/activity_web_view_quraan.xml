@@ -2,15 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    tools:context=".quran.web_view_quraan"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <WebView
         android:id="@+id/webview_quraan"
         android:layout_width="match_parent"
-        android:layout_height="650dp"
-        android:background="@color/BEG"/>
+        android:layout_height="615dp"
+        android:layout_margin="10dp"
+        android:background="@color/BEG"
+        android:padding="7dp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,7 +21,6 @@
             android:id="@+id/pause"
             android:layout_centerInParent="true"
             android:layout_width="100dp"
-
             android:layout_height="100dp"
             android:src="@drawable/ic_pause_circle_filled_black_24dp"
             />

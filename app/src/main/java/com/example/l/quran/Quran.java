@@ -6,20 +6,21 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.l.Adapter;
 import com.example.l.DataBase;
 import com.example.l.adapter.OnClickListener_Stories_anasheed;
-import com.example.l.R;
+import com.example.l.Recycler_Adapter_Stories;
+import com.example.muslim_child.R;
 
 import java.util.ArrayList;
 
 public class Quran extends AppCompatActivity {
     RecyclerView recyclerView;
-
-    DataBase dataBase ;
+    //DataBase dataBase ;
     TextView textView ;
     ArrayList<QuranDataBase> quraan_list ;
 
@@ -30,15 +31,16 @@ public class Quran extends AppCompatActivity {
         setContentView(R.layout.activity_quran);
         textView = (TextView)findViewById(R.id.txt_title_name);
         recyclerView = (RecyclerView) findViewById(R.id.recycler);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.
+                LayoutParams.FLAG_FULLSCREEN);
 
         quraan_list = new ArrayList<>();
-        dataBase = new DataBase(this);
-        QuranDataBase first = new QuranDataBase( " سورة عم ",R.drawable.boy);
-        quraan_list = dataBase.getallsor() ;
-//        AnimationDrawable animationDrawable = (AnimationDrawable) linearLayout.getBackground();
-//        animationDrawable.setEnterFadeDuration(2000);
-//        animationDrawable.setExitFadeDuration(5000);
-//        animationDrawable.start();
+        //dataBase = new DataBase(this);
+        //QuranDataBase first = new QuranDataBase( " سورة عم ",R.drawable.boy);
+        //quraan_list = dataBase.getallsor() ;
+
+
+
 
 
 
@@ -54,7 +56,7 @@ public class Quran extends AppCompatActivity {
 
         });
 
-        dataBase.insertquraan(first);
+        //dataBase.insertquraan(first);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         recyclerView.setHasFixedSize(true);

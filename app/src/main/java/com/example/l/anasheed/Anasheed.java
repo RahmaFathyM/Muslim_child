@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.example.l.Play_Anasheed;
 import com.example.l.adapter.OnClickListener_Stories_anasheed;
 import com.example.l.R;
+import com.example.muslim_child.R;
 
 import java.util.ArrayList;
 
@@ -26,8 +27,10 @@ public class Anasheed extends AppCompatActivity {
 //   int before , next ;
     ArrayList<Anasheed_Card> sounds_array;
 
-String [] Titles = {"الله ربى والإسلام دينى", "أركان الإسلام" ,"محمد نبينا" , "الصلاة" , "قرآنى" , "الله أكبر بسم الله" , "طلع البدر علينا" ,"أهلاً رمضان" ,"الشهور الهجرية"}; // anasheed _names;
-    int [] sounds = {R.raw.allahrbeandeleslamdeeny ,R.raw.arkaneleslam ,R.raw.mohamedisourprophet,R.raw.thepray ,R.raw.myquraan,R.raw.allahakbarbesmellah
+String [] Titles = {"الله ربى والإسلام دينى", "أركان الإسلام" ,"محمد نبينا" , "الصلاة" ,
+        "قرآنى" , "الله أكبر بسم الله" , "طلع البدر علينا" ,"أهلاً رمضان" ,"الشهور الهجرية"}; // anasheed _names;
+    int [] sounds = {R.raw.allahrbeandeleslamdeeny ,R.raw.arkaneleslam ,R.raw.mohamedisourprophet,R.raw.thepray ,
+            R.raw.myquraan,R.raw.allahakbarbesmellah
             ,R.raw.tl3elbadr3lyna ,R.raw.ahlanramadan,R.raw.elshhoorelhegrya};   // anasheed
 
 

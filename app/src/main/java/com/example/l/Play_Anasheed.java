@@ -11,6 +11,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.example.l.anasheed.Anasheed_Card;
+import com.example.muslim_child.R;
 
 import java.util.ArrayList;
 

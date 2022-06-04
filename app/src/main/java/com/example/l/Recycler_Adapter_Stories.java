@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.l.adapter.OnClickListener_Stories_anasheed;
 import com.example.l.stories.Stories_Card;
+import com.example.muslim_child.R;
 
 import java.util.ArrayList;
 
